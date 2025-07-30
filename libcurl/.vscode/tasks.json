@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compilar con g++ y vcpkg curl",
+      "type": "shell",
+      "command": "C:/TDM-GCC-64/bin/g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "main.cpp",
+        "-o",
+        "main.exe",
+        "-IC:/vcpkg/installed/x64-windows/include",
+        "-LC:/vcpkg/installed/x64-windows/lib",
+        "-lcurl"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
